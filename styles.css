@@ -1,0 +1,17 @@
+label {
+    font-style: italic;
+    font-size: 15px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h1{
+    text-decoration: underline;
+    color: blue;
+}
+
+.imagen {
+    width: 50%;
+}
