@@ -1,17 +1,29 @@
 label {
+    font-family: 'Edu SA Beginner', cursive;
     font-style: italic;
     font-size: 15px;
 }
 
 h2 {
+    font-family: 'Edu SA Beginner', cursive;
     text-decoration: underline;
+    padding-right: 1px;
 }
 
 h1{
+    font-family: 'Edu SA Beginner', cursive;
     text-decoration: underline;
     color: blue;
 }
 
 .imagen {
     width: 50%;
+}
+
+div{
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px;
+    border-radius: 5px;
 }
