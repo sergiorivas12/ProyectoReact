@@ -24,6 +24,9 @@ div{
     border: 1px solid;
     padding: 10px;
     margin-bottom: 20px;
-    box-shadow: 5px 10px;
     border-radius: 5px;
+}
+
+div:hover{
+    box-shadow: 5px 10px;
 }
