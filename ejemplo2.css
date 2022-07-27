@@ -1,0 +1,40 @@
+label {
+    font-family: 'Edu SA Beginner', cursive;
+    font-style: italic;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Edu SA Beginner', cursive;
+    text-decoration: underline;
+    padding-right: 1px;
+}
+
+h1{
+    font-family: 'Edu SA Beginner', cursive;
+    text-decoration: underline;
+    color: blue;
+}
+
+.imagen {
+    width: 50%;
+}
+
+.item{
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.item:hover{
+    box-shadow: 5px 10px;
+}
+
+.contenedor{
+    height: 800px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}

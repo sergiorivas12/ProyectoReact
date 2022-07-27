@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CV</title>
+        <link rel="stylesheet" href="ejemplo1.css">
+        <!-- STYLES GOOGLE-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+        <!-- FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <main>
+            <section>
+
+                <h1>Curriculum Vitae</h1>
+                <img class="imagen" src="eLearning-fondo-transparente.png">
+                </br>
+                <form method="POST" action="#">
+                    <div class="contenedor">
+                        <div>
+                            <h2><i class="fa-solid fa-person"></i>Datos Personales</h2>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido">
+                            </br>
+                            </br>
+                            <label for="tipo_documento">Tipo Documento</label>
+                            <select name="tipo_documento">
+                                <option value="1">Dni</option>
+                                <option value="2">Cuil</option>
+                                <option value="3">Cuit</option>
+                            </select>
+                            <label for="documento">Nro.Documento</label>
+                            <input type="text" name="documento">
+                            </br>
+                            </br>
+                            <label for="lugar_nacimiento">Lugar Nacimiento</label>
+                            <input type="text" name="lugar_nacimiento">
+                            </br>
+                            </br>
+                            <label for="estado_civil">Estado Civil</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="estado_civil" value="S">
+                                    <label>Soltero/a</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="estado_civil" value="C">
+                                    <label>Casado/a</label>
+                                </li>
+                            </ul>
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                            </br>
+                            </br>
+                            <label for="email">Domicilio</label>
+                            <input type="text" name="domicilio">
+                            <label for="email">Partido</label>
+                            <input type="text" name="partido">
+                            </br>
+                            </br>
+                            <label for="provincia">Provincia</label>
+                            <select name="provincia">
+                                <option value="1">Buenos Aires</option>
+                                <option value="2">San Luis</option>
+                                <option value="3">CABA</option>
+                            </select>
+                            <label for="pais">Pais</label>
+                            <select name="pais">
+                                <option value="1">Argentina</option>
+                                <option value="2">Brasil</option>
+                                <option value="3">Uruguay</option>
+                            </select>
+                            </br>
+                            </br>
+                            <label for="telefono">Telefono</label>
+                            <input type="text" name="telefono">
+                            <label for="celular">Celular</label>
+                            <input type="text" name="celular">
+                        </div>
+                        <div>
+                            <h2><i class="fa-solid fa-book"></i>Conocimientos</h2>
+                            <label>Programacion</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="conocimientos[]" value="1" id="php">
+                                    <label for="php">PHP</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="conocimientos[]" value="2" id="java">
+                                    <label for="java">Java</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="conocimientos[]" value="3" id="c#">
+                                    <label for="c#">C#</label>
+                                </li>
+                            </ul>
+                            <label>Idiomas</label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="idiomas[]" value="1" id="ingles">
+                                    <label for="php">Ingles</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="idiomas[]" value="2" id="frances">
+                                    <label for="java">Frances</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="idiomas[]" value="3" id="portugues">
+                                    <label for="c#">Portugues</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2><i class="fa-solid fa-database"></i>Experiencia Laboral</h2>
+                            <textarea name="experiencia_laboral"></textarea>
+                            </br>
+                            </br>
+                            <input type="submit" value="Guardar">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
