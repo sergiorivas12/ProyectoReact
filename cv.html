@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>CV</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css">
         <!-- STYLES GOOGLE-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,110 +22,151 @@
             <section>
 
                 <h1>Curriculum Vitae</h1>
-                <img class="imagen" src="eLearning-fondo-transparente.png">
+                <img class="imagen img-fluid" src="eLearning-fondo-transparente.png">
                 </br>
-                <form method="POST" action="#">
-                    <div>
+                <form method="POST" action="#" class="form-horizontal">
+                    <div class="container">
                         <h2><i class="fa-solid fa-person"></i>Datos Personales</h2>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido">
-                        </br>
-                        </br>
-                        <label for="tipo_documento">Tipo Documento</label>
-                        <select name="tipo_documento">
-                            <option value="1">Dni</option>
-                            <option value="2">Cuil</option>
-                            <option value="3">Cuit</option>
-                        </select>
-                        <label for="documento">Nro.Documento</label>
-                        <input type="text" name="documento">
-                        </br>
-                        </br>
-                        <label for="lugar_nacimiento">Lugar Nacimiento</label>
-                        <input type="text" name="lugar_nacimiento">
-                        </br>
-                        </br>
-                        <label for="estado_civil">Estado Civil</label>
-                        <ul>
-                            <li>
-                                <input type="radio" name="estado_civil" value="S">
-                                <label>Soltero/a</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="estado_civil" value="C">
-                                <label>Casado/a</label>
-                            </li>
-                        </ul>
-                        <label for="email">Email</label>
-                        <input type="text" name="email">
-                        </br>
-                        </br>
-                        <label for="email">Domicilio</label>
-                        <input type="text" name="domicilio">
-                        <label for="email">Partido</label>
-                        <input type="text" name="partido">
-                        </br>
-                        </br>
-                        <label for="provincia">Provincia</label>
-                        <select name="provincia">
-                            <option value="1">Buenos Aires</option>
-                            <option value="2">San Luis</option>
-                            <option value="3">CABA</option>
-                        </select>
-                        <label for="pais">Pais</label>
-                        <select name="pais">
-                            <option value="1">Argentina</option>
-                            <option value="2">Brasil</option>
-                            <option value="3">Uruguay</option>
-                        </select>
-                        </br>
-                        </br>
-                        <label for="telefono">Telefono</label>
-                        <input type="text" name="telefono">
-                        <label for="celular">Celular</label>
-                        <input type="text" name="celular">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="nombre">Nombre</label>
+                                <input class="form-control" type="text" name="nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="apellido">Apellido</label>
+                                <input class="form-control" type="text" name="apellido">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="tipo_documento">Tipo Documento</label>
+                                <select class="form-select" name="tipo_documento">
+                                    <option value="1">Dni</option>
+                                    <option value="2">Cuil</option>
+                                    <option value="3">Cuit</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="documento">Nro.Documento</label>
+                                <input class="form-control" type="text" name="documento">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="lugar_nacimiento">Lugar Nacimiento</label>
+                                <input class="form-control" type="text" name="lugar_nacimiento">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" type="text" name="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="estado_civil">Estado Civil</label>
+                                <ul>
+                                    <li>
+                                        <input class="form-check-input" type="radio" name="estado_civil" value="S">
+                                        <label>Soltero/a</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-check-input" type="radio" name="estado_civil" value="C">
+                                        <label>Casado/a</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="email">Domicilio</label>
+                                <input class="form-control" type="text" name="domicilio">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="email">Partido</label>
+                                <input class="form-control" type="text" name="partido">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="provincia">Provincia</label>
+                                <select class="form-select" name="provincia">
+                                    <option value="1">Buenos Aires</option>
+                                    <option value="2">San Luis</option>
+                                    <option value="3">CABA</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="pais">Pais</label>
+                                <select class="form-select" name="pais">
+                                    <option value="1">Argentina</option>
+                                    <option value="2">Brasil</option>
+                                    <option value="3">Uruguay</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label" for="telefono">Telefono</label>
+                                <input class="form-control" type="text" name="telefono">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="celular">Celular</label>
+                                <input class="form-control" type="text" name="celular">
+                            </div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="container">
                         <h2><i class="fa-solid fa-book"></i>Conocimientos</h2>
-                        <label>Programacion</label>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="conocimientos[]" value="1" id="php">
-                                <label for="php">PHP</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="conocimientos[]" value="2" id="java">
-                                <label for="java">Java</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="conocimientos[]" value="3" id="c#">
-                                <label for="c#">C#</label>
-                            </li>
-                        </ul>
-                        <label>Idiomas</label>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="idiomas[]" value="1" id="ingles">
-                                <label for="php">Ingles</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="idiomas[]" value="2" id="frances">
-                                <label for="java">Frances</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="idiomas[]" value="3" id="portugues">
-                                <label for="c#">Portugues</label>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Programacion</label>
+                                <ul>
+                                    <li>
+                                        <input class="form-check-input" type="checkbox" name="conocimientos[]" value="1" id="php">
+                                        <label for="php">PHP</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-check-input" type="checkbox" name="conocimientos[]" value="2" id="java">
+                                        <label for="java">Java</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-check-input" type="checkbox" name="conocimientos[]" value="3" id="c#">
+                                        <label for="c#">C#</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Idiomas</label>
+                                <ul>
+                                    <li>
+                                        <input class="form-check-input" type="checkbox" name="idiomas[]" value="1" id="ingles">
+                                        <label for="php">Ingles</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-check-input" type="checkbox" name="idiomas[]" value="2" id="frances">
+                                        <label for="java">Frances</label>
+                                    </li>
+                                    <li>
+                                        <input class="form-check-input" type="checkbox" name="idiomas[]" value="3" id="portugues">
+                                        <label for="c#">Portugues</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h2><i class="fa-solid fa-database"></i>Experiencia Laboral</h2>
-                        <textarea name="experiencia_laboral"></textarea>
-                        </br>
-                        </br>
-                        <input type="submit" value="Guardar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2><i class="fa-solid fa-database"></i>Experiencia Laboral</h2>
+                                <textarea style="height: 200px" class="form-control" name="experiencia_laboral"></textarea>
+                            </div>
+                        </div>
+                        <div style="height: 10px"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input class="btn btn-primary mb-3" type="submit" value="Guardar">
+                            </div>
+                        </div>
                     </div>
                 </form>
             </section>
