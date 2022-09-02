@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS Ejemplo 2</title>
+        <script type="text/javascript" src="jsParte2.js"></script>
+        <!-- STYLES GOOGLE-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+        <!-- FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body id="bodyHtml">
+        <header></header>
+        <nav></nav>
+        <main>
+            <section>
+                <h1>Parte 2</h1>
+                <h3>Ejercicio 1</h3>
+                <button type="button" style="background-color: red;color:white" onclick="cambiarColorBody('red')">Rojo</button>
+                <button type="button" style="background-color: yellow;color:black" onclick="cambiarColorBody('yellow')">Amarillo</button>
+                <button type="button" style="background-color: blue;color:white" onclick="cambiarColorBody('blue')">Azul</button>
+                <h3>Ejercicio 2</h3>
+                <textarea onkeyup="contarLetras(this.value)"></textarea>
+                cantidad letras: <span id="textAreaCantLetras"></span>
+                <h3>Ejercicio 3(La funcion se encuentra en jsParte2.js)</h3>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
